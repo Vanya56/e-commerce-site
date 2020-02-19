@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const ButtonContainer = styled.button `
 text-transform: capitolize;
 font-size: 1.4rem;
@@ -20,5 +19,3 @@ transition: all 0.5s ease-in-out;
     outline: none;
 }
 `
-
-
