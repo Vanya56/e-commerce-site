@@ -1,9 +1,7 @@
-import React, { Component } from 'react'
-
+import React, {Component} from 'react'
 
 const ProductContext = React.createContext();
-// Provider
-// Consumer
+// Provider Consumer
 
 class ProductProvider extends Component {
     render() {
@@ -17,4 +15,4 @@ class ProductProvider extends Component {
 
 const ProductConsumer = ProductContext.Consumer;
 
-export { ProductConsumer, ProductProvider };
+export {ProductConsumer, ProductProvider};
