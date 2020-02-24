@@ -1,9 +1,9 @@
 export const storeProducts = [
     {
         id: 1,
-        title: "WINSTON PURE LIGHT LINE SERIES",
+        title: "Winston Pure",
         img: "img/product-1.png",
-        price: 10,
+        price: 800,
         company: "WINSTON",
         info: "FOR THOSE WHO PREFER TO FISH WITH A LIGHT TOUCH. Advanced Boron III light line r" +
                 "ods Moderate action with quick recovery that will allow for open loops required " +
@@ -15,9 +15,9 @@ export const storeProducts = [
         total: 0
     }, {
         id: 2,
-        title: "Helios",
+        title: "Orvis Helios",
         img: "img/product-2.png",
-        price: 16,
+        price: 750,
         company: "ORVIS",
         info: "Helios 3F 4-Weight, 8.6 Fly Rods offer enhanced accuracy and feel at mid-range d" +
                 "istances. The Helios 3F 864-4 is a fly rod that will appeal to any trout angler " +
@@ -38,9 +38,9 @@ export const storeProducts = [
         total: 0
     }, {
         id: 3,
-        title: "Superfine Glass",
+        title: "Orvis Superfine Glass",
         img: "img/product-3.png",
-        price: 8,
+        price: 395,
         company: "ORVIS",
         info: "A new standard has arrived in fiberglass fly rods. The Superfine Glass Fly Rod w" +
                 "as voted the best fiberglass rod by Fly Fisherman magazine. Fiberglass fly rods " +
@@ -54,9 +54,9 @@ export const storeProducts = [
         total: 0
     }, {
         id: 4,
-        title: "TROUT LL",
+        title: "Sage Trout LL",
         img: "img/product-4.png",
-        price: 18,
+        price: 799,
         company: "SAGE",
         info: "With a delicate touch and medium action, the TROUT LL family has been designed w" +
                 "ith the trout angler and dry flies in mind. Through blank taper optimization and" +
@@ -72,7 +72,7 @@ export const storeProducts = [
         id: 5,
         title: "NRX+ LP",
         img: "img/product-5.png",
-        price: 24,
+        price: 600,
         company: "G-LOOMIS",
         info: "Picky and particular, feeding trout aren't often available to receive offerings " +
                 "sent in a straight-line path. Perfect, delicate drifts require slinging unconven" +
@@ -90,7 +90,7 @@ export const storeProducts = [
         id: 6,
         title: "Sage X",
         img: "img/product-6.png",
-        price: 17,
+        price: 700,
         company: "SAGE",
         info: "The X rod’s fast action taper built with our KonneticHD Technology delivers grea" +
                 "ter blank recovery and a crisper tip stop - creating tighter, more efficient loo" +
@@ -105,9 +105,9 @@ export const storeProducts = [
         total: 0
     }, {
         id: 7,
-        title: "Sirrus Glass",
+        title: "Hardy Sirrus Glass",
         img: "img/product-7.png",
-        price: 30,
+        price: 399,
         company: "HARDY",
         info: "Sirrus Glass rods are a range of super smooth, deep loading fly rods bringing th" +
                 "e advantages of SINTRIX® technology to a classic rod range. Perfectly suited to " +
@@ -121,7 +121,7 @@ export const storeProducts = [
         id: 8,
         title: "Hardy Zephrus",
         img: "img/product-8.png",
-        price: 2,
+        price: 695,
         company: "HARDY",
         info: "The Hardy Zephrus series of fly rods features our award winning Sintrix material" +
                 " - Sintrix 440.The Zephrus exhibits high recovery and enhanced in hand feel for " +
@@ -135,9 +135,9 @@ export const storeProducts = [
 
 export const detailProduct = {
     id: 1,
-    title: "WINSTON PURE LIGHT LINE SERIES",
+    title: "Winston Pure",
     img: "img/product-1.png",
-    price: 10,
+    price: 800,
     company: "WINSTON",
     info: "FOR THOSE WHO PREFER TO FISH WITH A LIGHT TOUCH. Advanced Boron III light line r" +
             "ods Moderate action with quick recovery that will allow for open loops required " +
