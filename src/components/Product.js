@@ -72,5 +72,7 @@ const ProductWrapper = styled.div `
         background: var(--lightBlue);
         border: none;
         color: var(--mainWhite);
+        font-size: 1.4rem;
+        border-radius: 0.5rem 0 0 0;
     }
     `
