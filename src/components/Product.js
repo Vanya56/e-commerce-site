@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import {productConsumer} from '../context';
+import propTypes from 'prop-types';
 
 export default class Product extends Component {
     render() {
@@ -15,25 +16,44 @@ export default class Product extends Component {
                         </Link>
                         <button
                             className="cart-btn"
-                            disabled={inCart ? true: false} onClick={() => {console.log('Added to cart')}}>
-                            {inCart ? (<p className="text-capitalize mb-0" disabled>{" "}in cart</p>) : (<i className="fa fa-shopping-cart"/>)}
+                            disabled={inCart
+                            ? true
+                            : false}
+                            onClick={() => {
+                            console.log('Added to cart')
+                        }}>
+                            {inCart
+                                ? (
+                                    <p className="text-capitalize mb-0" disabled>{" "}in cart</p>
+                                )
+                                : (<i className="fa fa-shopping-cart"/>)}
                         </button>
-                        </div>
-                        {/* Card footer */}
-                        <div className="card-footer d-flex justify-content-between">
-                            <p className="align-self-center mb-0">
-                                {title}
-                            </p>
-                            <h5 className="text-blue font-oswald mb-0">
-                                <span className="mr-1">$</span>
-                                {price}
-                            </h5>
-                        </div>
+                    </div>
+                    {/* Card footer */}
+                    <div className="card-footer d-flex justify-content-between">
+                        <p className="align-self-center mb-0">
+                            {title}
+                        </p>
+                        <h5 className="text-blue font-oswald mb-0">
+                            <span className="mr-1">$</span>
+                            {price}
+                        </h5>
+                    </div>
                 </div>
             </ProductWrapper>
         );
     }
 }
+
+// Product.propTypes = {
+//     product:PropTypes.shape({
+//         id:PropTypes.number, 
+//         img:PropTypes.string, 
+//         title:PropTypes.string, 
+//         price:PropTypes.number, 
+//         inCart:PropTypes.bool
+//     }).isRequired
+// };
 
 const ProductWrapper = styled.div `
     .card{
