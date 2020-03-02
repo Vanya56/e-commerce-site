@@ -5,7 +5,7 @@ export const storeProducts = [
         img: "img/product-1.png",
         price: 800,
         company: "WINSTON",
-        info: "FOR THOSE WHO PREFER TO FISH WITH A LIGHT TOUCH. Advanced Boron III light line r" +
+        info: "For those who prefer to fish with a light touch. Advanced Boron III light line r" +
                 "ods Moderate action with quick recovery that will allow for open loops required " +
                 "for fine dry fly presentation with the ability to generate faster line speed as " +
                 "required for different conditions. True Winston progressive action Slim profile " +
@@ -139,7 +139,7 @@ export const detailProduct = {
     img: "img/product-1.png",
     price: 800,
     company: "WINSTON",
-    info: "FOR THOSE WHO PREFER TO FISH WITH A LIGHT TOUCH. Advanced Boron III light line r" +
+    info: "For those who prefer to fish with a light touch. Advanced Boron III light line r" +
             "ods Moderate action with quick recovery that will allow for open loops required " +
             "for fine dry fly presentation with the ability to generate faster line speed as " +
             "required for different conditions. True Winston progressive action Slim profile " +
