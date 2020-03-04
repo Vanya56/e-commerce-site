@@ -1,13 +1,13 @@
 import React, {Component} from 'react'
 import {ProductConsumer} from '../context';
 import {Link} from 'react-router-dom';
-import {buttonContainer, ButtonContainer} from './Button';
+import {ButtonContainer} from './Button';
 
 export default class Details extends Component {
     render() {
         return (
             <ProductConsumer>
-                {(value) => {
+                {value => {
                     const {
                         id,
                         company,
@@ -16,7 +16,7 @@ export default class Details extends Component {
                         price,
                         title,
                         inCart
-                    } = value.detailProduct;
+                    } = value.detailProduct
                     return (
                         <div className="container py-5">
                             {/* Title */}
