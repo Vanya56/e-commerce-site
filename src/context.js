@@ -7,7 +7,7 @@ const ProductContext = React.createContext();
 class ProductProvider extends Component {
     state = {
         products: [],
-        detailProduct:detailProduct
+        detailProduct: detailProduct
     };
     componentDidMount() {
         this.setProducts();
@@ -22,28 +22,33 @@ class ProductProvider extends Component {
                 ...tempProducts,
                 singleItem
             ];
-        })
+        });
         this.setState(() => {
-            return {products:tempProducts}
-        })
-    }
+            return {products: tempProducts}
+        });
+    };
 
     getItem = (id) => {
         const product = this
             .state
             .products
-            .find(item => item.Id === id);
+            .find(item => item.id === id);
         return product;
     }
     handleDetail = (id) => {
         const product = this.getItem(id);
         this.setState(() => {
-            return {detailProduct:product}
+            return {detailProduct: product}
         })
     }
     addToCart = (id) => {
-        console.log(`Hello from cart.id is ${id}`);
-    }
+        let tempProducts = [...this.state.products];
+        const index = tempProducts.indexOf(this.getItem(id));
+        const product = tempProducts[index]
+        product.inCart = true;
+        product.count = 1;
+        const price = product.price;
+    };
     render() {
         return (
             <ProductContext.Provider
