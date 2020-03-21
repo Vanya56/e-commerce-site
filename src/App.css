@@ -4,6 +4,7 @@
     --mainWhite: #f3f3f3;
     --mainDark: #232528;
     --mainYellow: #ffa400;
+    transition: all 1s linear;
 }
 
 body {
@@ -33,4 +34,15 @@ body {
     color: var(--mainDark);
     border-radius: 0 !important;
     border: 0.1rem solid var(--mainDark)!important;
+}
+.btn-black:hover {
+    background: var(--mainDark)!important;
+    color: var(--mainWhite)!important;
+}
+
+.cart-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--mainYellow);
+
 }
