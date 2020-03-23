@@ -89,9 +89,14 @@ class ProductProvider extends Component {
     removeItem = (id) => {
         console.log("Remove item");
     };
-
+    // clear cart function sets cart = to an empty array.
     clearCart = () => {
-        console.log("cart is empty");
+        this.setState(() => {
+            return {cart: []};
+        }, () => {
+            // This will get fresh original objects from the data base.
+            this.setProducts();
+        })
     };
 
     addTotals = () => {
@@ -106,10 +111,7 @@ class ProductProvider extends Component {
         const tax = parseFloat(tempTax.toFixed(3));
         const total = subTotal + tax
         this.setState(() => {
-            return {
-                cartSubTotal: subTotal, 
-                cartTax: tax, 
-                cartTotal: total}
+            return {cartSubTotal: subTotal, cartTax: tax, cartTotal: total}
         })
     }
     render() {
