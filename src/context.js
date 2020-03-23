@@ -8,7 +8,7 @@ class ProductProvider extends Component {
     state = {
         products: [],
         detailProduct: detailProduct,
-        cart: storeProducts,
+        cart: [],
         modalOpen: false,
         modalProduct: detailProduct,
         cartSubTotal: 0,
@@ -64,7 +64,7 @@ class ProductProvider extends Component {
                 ]
             }
         }, () => {
-            console.log(this.state);
+            this.addTotals();
         });
     };
     openModal = id => {
@@ -72,27 +72,45 @@ class ProductProvider extends Component {
         this.setState(() => {
             return {modalProduct: product, modalOpen: true}
         })
-    }
+    };
     closeModal = () => {
         this.setState(() => {
             return {modalOpen: false}
         })
-    }
+    };
     increment = (id) => {
         console.log("This is the increment method.");
 
-    }
+    };
     decrement = (id) => {
         console.log("This is the decrement method.");
 
-    }
+    };
     removeItem = (id) => {
         console.log("Remove item");
+    };
 
-    }
-    clearCart = ()=> {
+    clearCart = () => {
         console.log("cart is empty");
-        
+    };
+
+    addTotals = () => {
+        let subTotal = 0;
+        // This will loop over cart items in array and return total.
+        this
+            .state
+            .cart
+            .map(item => (subTotal += item.total));
+        const tempTax = subTotal * 0.1;
+        // This will return a nuber with 3 decimal places.
+        const tax = parseFloat(tempTax.toFixed(3));
+        const total = subTotal + tax
+        this.setState(() => {
+            return {
+                cartSubTotal: subTotal, 
+                cartTax: tax, 
+                cartTotal: total}
+        })
     }
     render() {
         return (
